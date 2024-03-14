@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Column Layout</title>
+<style>
+ .container {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    height:auto;
+
+  }
+  
+    .column {
+    flex: 1;
+    border: 5px solid black;
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    position: relative;
+    display: flex;
+    padding: 0 5px;
+    margin: 0 5px;     /* Adjust the margin to create space between columns */
+    font-family: Gill Sans, sans-serif;
+    font-size: x-large;
+    background-color: lightgrey;
+}
+
+
+
+       .inner-column {
+        background-color: pink; /* Just for demonstration */
+        width: 80px; /* Just for demonstration */
+        height: auto; /* Just for demonstration */
+        margin: 0px; /* Adjust the spacing as needed */
+        border: 2px solid black;
+        position: absolute;
+        top: 0;
+        left: 82%;
+        font-family: Gill Sans, sans-serif;
+
+}
+          .inner-column1{
+          background-color:red;
+          width: 50px; /* Just for demonstration */
+          height: auto; /* Just for demonstration */
+          margin: 0px; /* Adjust the spacing as needed */
+          border: 2px solid black;
+          position: absolute;
+          top: 0;
+          left: 88%;
+          font-family: Gill Sans, sans-serif;
+}
+           .inner-column2{
+           background-color: lightyellow;
+           width: 50px; /* Just for demonstration */
+           height: auto; /* Just for demonstration */
+           margin: 0px; /* Adjust the spacing as needed */
+           border: 2px solid black;
+           position: absolute;
+           top: 0;
+           left: 89%;
+           font-family: Gill Sans, sans-serif;
+}
+
+
+    
+  }
+
+
+ 
+  
+   
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+
+  }
+}
+</style>
+</head>
+<body>
+  <title>Centering H1 Tag</title>
+  <style>
+  /* CSS code to center the h1 tag */
+  h1 {
+    text-align: center;
+    margin-top: 20%;
+    font-family: Gill Sans, sans-serif;
+    font-weight: normal;
+    font-size: xxx-large;
+
+  }  
+  
+</style>
+<body>
+  <h1>OUR MENU </h1>
+<div class="container">
+  <div class="column">
+     <div class="inner-column"> Chicken</div>
+    <div class="column-content"><br>
+    
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+    
+  </div>
+  <div class="column">
+    <div class="inner-column1"> Beef</div>
+    <div class="column-content"><br>
+      
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+   </div>
+  <div class="column">
+    <div class="inner-column2"> Sushi</div>
+    <div class="column-content">
+     <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+ 
+  </div>
+</div>
+</body>
+</html>
